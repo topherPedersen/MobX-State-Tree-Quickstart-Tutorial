@@ -34,19 +34,15 @@ const RootStore = types
         }
     }))
 
-const john = User.create({ name: "Johnny Wang" })
-const eat = Todo.create({ name: "Johnny Wang", done: false })
-
-// store.addTodo(1, "Eat a cake")
-// store.todos.get(1).toggle()
-
-console.log("John:", getSnapshot(john))
-console.log("Eat TODO:", getSnapshot(eat))
+const store = RootStore.create({
+    users: {}
+})
 
 function App() {
     return (
         <div>
             <h1>Hello, MobX State Tree</h1>
+            <h2>Day 2!</h2>
         </div>
     );
 }
