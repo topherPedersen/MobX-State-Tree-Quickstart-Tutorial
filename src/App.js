@@ -38,6 +38,8 @@ const store = RootStore.create({
     users: {}
 })
 
+console.log(getSnapshot(store))
+
 function App() {
     return (
         <div>
